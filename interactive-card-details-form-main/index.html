@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" charset="utf-8" defer></script>
+</head>
+<body>
+  <section class="container">
+    <div class="card-preview">
+       <div class="cardBack card">
+         <p class="holderscvc">000</p>
+       </div>
+       <div class="cardFront card">
+         <p class="cardNumber">0000 0000 0000 0000</p>
+         <div class="nameAndExp">
+             <p class="holdersName">Jane Appleseed</p> <p class="exp">00/00</p>
+         </div>
+       </div>
+    </div>
+    <form class="form" action="index.html" method="post">
+          <label class="name">Cardholder Name<input type="text" placeholder="e.g. Jane Appleseed" class="holderInput" required>
+            <label class="name">Card Number<input type="text" placeholder="e.g. 4563 0045 0063 0000" class="cardNumberInput" maxLength="16" required>
+        <div class="dateAndCvc">
+                <label class="name">Exp. Date (MM/YY)<input type="month" placeholder="MM/YY" class="date dateCvc" maxLength="7" required>
+                  <label class="name">CVC<input type="text" placeholder="e.g. 123" class="cvc dateCvc" maxLength="3" minLength="3" required>
+        </div>
+         <button type="submit" class="submitBtn">Confirm</button>
+
+    </form>
+  </section>
+
+  <!--   Thank you!
+    We've added your card details
+    Continue -->
+
+
+</body>
+</html>
